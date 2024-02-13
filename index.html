@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Invoice</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="shortcut icon"
+      href="./ABELOV INTERNATIONAL LTD.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- invoice container -->
+    <div class="invoice-container">
+      <!-- header -->
+      <div class="header">
+        <img
+          class="logo"
+          src="./ABELOV INTERNATIONAL LTD.jpg"
+          alt="Company Logo"
+        />
+        <h2>E-Invoice</h2>
+      </div>
+
+      <!-- bill -->
+      <div class="bill">
+        <div class="from">
+          <h3>Bill From:</h3>
+          <p>
+            Abelov International Ltd<br /> 
+            Address: City Emirate Plaza Block A4 &amp; A6 <br />
+            Opposite Area Command Abuja Phase 1 <br />
+            Jalingo,Taraba State<br /> 
+            Phone: 08101726816<br />
+            Email: abelovinternationalltd@gmail.com
+          </p>
+        </div>
+        <div class="to">
+          <h3>Bill To:</h3>
+          <p>
+            Name: <input type="text" /><br /><br>
+            Address: <input type="text" /><br /><br>
+            Phone: <input type="tel" /> <br /><br>
+            Date: <input type="datetime-local" />
+          </p>
+        </div>
+      </div>
+
+      <!-- services -->
+      <div class="service-details">
+        <h3>Description of Services:</h3>
+        <br />
+        <p>
+          Description <span class="amt">Amount</span>
+          <span class="qty">Quantity</span>
+        </p>
+        <p>
+          <input type="text" placeholder="Description" />
+          <span>₦ <input type="text" placeholder="amount" /> </span>
+          <span><input type="text" placeholder="Quantity" /></span>
+        </p>
+        <p>
+          <input type="text" placeholder="Description" />
+          <span>₦ <input type="text" placeholder="amount" /> </span>
+          <span><input type="text" placeholder="Quantity" /></span>
+        </p>
+        <p>
+          <input type="text" placeholder="Description" />
+          <span>₦ <input type="text" placeholder="amount" /> </span>
+          <span><input type="text" placeholder="Quantity" /></span>
+        </p>
+      </div>
+
+      <!-- total -->
+      <div class="total-details">
+        <h3>Total Amount:</h3>
+        <p>₦ <input type="tel" /></p>
+      </div>
+
+      <!-- payment -->
+      <div class="payment-details">
+        <h3>Payment Details:</h3>
+        <p>Payment Method:</p>
+        <select name="payment">
+          <option value="cash">CASH</option>
+          <option value="transfer">TRANSFER</option>
+          <option value="CHEQUE">CHEQUE</option>
+        </select>
+      </div>
+
+      <!-- footer -->
+      <div class="print-button">
+        <button onclick="window.print()">Print Invoice</button>
+      </div>
+    </div>
+  </body>
+</html>
